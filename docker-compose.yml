@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres
+    container_name: gin_postgres
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: user
+      POSTGRES_DB: db
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:alpine
+    container_name: gin_redis
+    ports:
+      - "6379:6379"
+
+volumes:
+  db_data:

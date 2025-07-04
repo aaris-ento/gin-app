@@ -1,0 +1,62 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Output of go build
+/build/
+*.o
+*.a
+
+# Dependency directories (vendor if used)
+vendor/
+
+# Go workspace file (Go 1.18+)
+go.work
+go.work.sum
+
+# IDE/editor settings
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Configuration / env files
+.env
+.env.local
+.env.*.local
+config.yaml
+config.toml
+
+# Air (live reload tool)
+.tmp/
+.air.toml
+.air/
+
+# Cover profiles
+coverage.out
+cover.out
+
+# Redis dump (if using locally)
+dump.rdb
+
+# SQLite (if used for dev)
+*.db
+*.sqlite
+
+# Test cache
+*.testcache
+
+
+tmp/
