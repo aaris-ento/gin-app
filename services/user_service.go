@@ -120,4 +120,5 @@ func (s *UserService) ResetPassword(token string, password string) {
 	}
 	user.Password = hashPassword
 	s.userRepo.Update(user)
+	s.userRepo.DeleteUserToken(token)
 }
